@@ -7,7 +7,7 @@ bash
 Copy code
 pip install flask pydicom
 Save the following script as app.py.
-
+ 
 Code
 python
 Copy code
