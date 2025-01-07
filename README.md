@@ -107,7 +107,7 @@ The properties.html template displays the extracted DICOM properties in a table.
 Run the Application
 Start the app by running:
 
-bash
-Copy code
+```
 python app.py
+```
 Visit http://127.0.0.1:5000 in your browser to upload and view DICOM file properties.
