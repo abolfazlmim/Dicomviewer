@@ -9,7 +9,7 @@ Save the following script as app.py.
 
 
 #python
-```
+```python
 from flask import Flask, render_template, request, redirect, url_for
 import os
 import pydicom
