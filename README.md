@@ -1,16 +1,15 @@
-This is Python program that uses Flask for creating a web application and the pydicom library to handle DICOM files. This program allows users to upload a DICOM file and displays its properties on a webpage.
+This is a Python program that creates a web application using Flask and the pydicom library to handle DICOM files. It allows users to upload DICOM files and displays their properties on a webpage.
 
 Prerequisites
 Install required libraries:
 
 bash
-Copy code
 pip install flask pydicom
 Save the following script as app.py.
- 
-Code
-python
-Copy code
+
+
+#python
+```
 from flask import Flask, render_template, request, redirect, url_for
 import os
 import pydicom
@@ -46,12 +45,13 @@ def upload_file():
 
 if __name__ == '__main__':
     app.run(debug=True)
+```
 HTML Templates
 Create a folder named templates in the same directory as app.py. Inside it, create two HTML files:
 
 index.html
-html
-Copy code
+
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,9 +67,10 @@ Copy code
     </form>
 </body>
 </html>
+```
+
 properties.html
-html
-Copy code
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,6 +99,7 @@ Copy code
     <a href="/">Upload Another File</a>
 </body>
 </html>
+```
 How It Works
 The index.html page allows the user to upload a DICOM file.
 The upload_file route saves the file, processes it with pydicom, and extracts the properties.
